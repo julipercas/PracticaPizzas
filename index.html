@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Domino's pizza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+  <script>
+    (function ($) {
+      $(function () {
+        // Plugin initialization
+        $('select').not('.disabled').formSelect();
+      });
+    })(jQuery); // end of jQuery name space
+  </script>
+
+</head>
+<header>
+
+  <h1>Crea tu pizza</h1>
+  <p>Crea tu pizza!</p>
+  <p>Diviertete creando tu pizza perfecta, elige tu masa favorita y los ingredientes que mas te gusten. Ponle nombre a
+    tu receta y guardala para hacer tu proximo pedido mas rapido y facil.</p>
+
+</header>
+<br>
+<body>
+  <div id="global">
+    <div id="central" class="row">
+      <form class="col s12">
+        <legend><h5>¿Como la quieres?</h5></legend><br>
+        <div class="input-field col s3 ">
+          <input placeholder="1 pizza" type="text" class="text" disabled>
+        </div>
+        <div class="input-field col s3">
+          <select>
+            <option value="1">Mediana</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+        <div class="input-field col s3">
+          <select>
+            <option value="2">Original</option>
+          </select>
+          <label>Materialize Select</label>
+        </div>
+
+        <br>
+        <div id="salsas">
+            <legend><h5>¿Cual es tu salsa?</h5></legend>
+            <br>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" checked />
+                    <span>Sin salsa</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input class="with-gap" name="gruposalsa" type="radio" />
+                    <span>Salsa barbacoa</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Salsa de tomate</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Crema fresca</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Crema fresca y barbacoa</span>
+                </label>
+            </div>
+            <div class="row"></div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Salsa bourbon (0% alcohol)</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Salsa barbacoa Texas</span>
+                </label>
+            </div>
+            <div class="col s2">
+                <label>
+                    <input name="gruposalsa" type="radio" />
+                    <span>Salsa barbacoa Kansas</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row"></div>
+        <legend><h5>¿Cuanta mozzarella te apetece?</h5></legend><br>
+        <form name="ejemplo" action="13-html5-range-input.php" method="POST">
+          <div>
+            <div class="queso">Sin queso mozzarella</div>
+            <div class="queso">Queso 100% mozzarella</div>
+            <div class="queso">Extra de queso 100% mozzarella</div>
+            <div class="queso">Doble extra de queso 100% mozzarella</div>
+          </div>
+          <input type="range" name="mozzarella" min="0" max="99" step="1" value="40">
+        </form>
+        <div class="row"></div>
+
+        <legend>¿Que ingredientes ponemos?</legend><br>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/tomate.png" width="80" height="80">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/bacon.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/aceitunas.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/anchoas.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Tomate</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Bacon</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Aceitunas</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Anchoas</span>
+          </label>
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/baconcrispy.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/cebollaCaramelizada_thumb.png">
+        </div>
+        <div class="col s2">
+
+          <img class="responsive-img" src="Imagenes/champinon.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/MeatBall_659001_0_ES.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Bacon crispy</span>
+          </label>
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Cebolla caramelizada</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+
+          <label>
+            <input type="checkbox" />
+            <span>Champiñon</span>
+          </label>
+
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Albondigas</span>
+          </label>
+        </div>
+        <div class="row"></div>
+
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/maiz.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/pimiento.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/atun.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/ternera.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Maiz</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Pimiento</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Atun</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Ternera</span>
+          </label>
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/jamon_serrano.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/pepperoni.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/pollo.png">
+        </div>
+        <div class="col s2">
+          <img class="responsive-img" src="Imagenes/pina.png">
+        </div>
+        <div class="row"></div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Jamon serrano</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Pepperoni</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Pollo</span>
+          </label>
+        </div>
+        <div class="col s2">
+          <label>
+            <input type="checkbox" />
+            <span>Piña</span>
+          </label>
+        </div>
+        <div class="row "></div> 
+      </form>
+    </div>
+    <aside>
+      <div id="pizzacom" class="col s6">
+        <img id="pizza" src="./Imagenes/masa.jpg"><br>
+        <div class="input-field inline col s6">
+          <input id="email_inline" type="email" class="validate">
+          <label for="email_inline">Email</label>
+          <span class="helper-text" data-error="wrong" data-success="right">Recibir descuentos y promociones</span>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+</body>
+
+</html>

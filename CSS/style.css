@@ -1,0 +1,52 @@
+header{
+    background-color: rgb(45, 45, 187);
+    margin-top: -3%;
+    padding: 2px;
+}
+body{
+    background-color: rgb(236, 232, 232);
+}
+h1{
+    margin-left: 3%;
+    color: white;
+    font-family: helvetica;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+span{
+    width: 20%;
+    text-align: center;
+}
+p{
+    text-align: left;
+    margin-left: 3%;
+    margin-right: 20%;
+    color: white;
+}
+#salsas{
+    clear: both;
+    font-size: 0.3em;
+    text-align: center;
+}
+#pizzacom{
+    float: right;
+    height: 1260px;
+    width: 30%;
+}
+#central{
+    float: left;
+    margin-left: 3%;
+    width: 65%;
+}
+#pizza{
+    width: 80%;
+    margin-top: 50%;
+}
+.queso{
+    display: inline-block;
+    font-size: 0.9em;
+    width: 24%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
